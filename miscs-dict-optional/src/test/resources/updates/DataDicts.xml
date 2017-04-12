@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dataDicts>
+    <dataDict>
+        <name>Key1</name>
+        <text>Text1</text>
+        <value>1</value>
+        <description>Text 1 Description</description>
+    </dataDict>
+    <dataDict>
+        <name>Key1</name>
+        <text>Text2</text>
+        <value>2</value>
+        <description>Text 2 Description</description>
+    </dataDict>
+    <dataDict>
+        <name>Key1</name>
+        <text>Text3</text>
+        <value>3</value>
+        <description>Text 3 Description</description>
+    </dataDict>
+    <dataDict>
+        <name>Key1</name>
+        <text>Text4</text>
+        <value>4</value>
+        <description>Text 4 Description</description>
+    </dataDict>
+    <dataDict>
+        <name>Key1</name>
+        <text>Text5</text>
+        <value>5</value>
+        <description>Text 5 Description</description>
+    </dataDict>
+</dataDicts>
