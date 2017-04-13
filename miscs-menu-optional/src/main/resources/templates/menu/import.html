@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:yq="http://www.yqboots.com" xmlns="http://www.w3.org/1999/xhtml" layout:decorator="layouts/layout">
+<head>
+  <title th:text="#{DCT0001}">Data Dict Management</title>
+</head>
+<body>
+<div layout:fragment="breadcrumbs">
+  <yq:breadcrumbs menu="DATA_DICT"/>
+</div>
+<div class="container content content-sm height-600" layout:fragment="content">
+  <yq:alert level="danger"/>
+  <form class="sky-form" action="#" th:action="@{/menu/imports}" method="post"
+        enctype="multipart/form-data" th:object="${fileUploadForm}">
+    <fieldset>
+      <section>
+        <label class="label" th:text="#{MNU0014}">Input a File (XML Format)</label>
+        <label class="input input-file">
+          <div class="button">
+            <input th:field="*{file}" type="file"/>
+            <span th:text="#{MNU0015}">Browse</span>
+          </div>
+          <input type="text" readonly="readonly"/>
+        </label>
+
+        <p th:if="${#fields.hasErrors('file')}" th:errors="*{file}"></p>
+      </section>
+    </fieldset>
+    <footer>
+      <button class="btn-u rounded" type="submit" th:text="#{MNU0016}">Submit</button>
+      <button class="btn-u rounded" type="reset" th:text="#{MNU0017}">Reset</button>
+    </footer>
+  </form>
+</div>
+</body>
+</html>
